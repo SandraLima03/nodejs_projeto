@@ -18,4 +18,5 @@ export class CreateRegisterDTO{
     @IsString()
     site:string;   
     
+    phone: string;
 }
