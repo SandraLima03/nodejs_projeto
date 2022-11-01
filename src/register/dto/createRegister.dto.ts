@@ -1,4 +1,4 @@
-import { IsString, IsNotEmpty, MinLength, IsEmail, MaxLength } from "class-validator";
+import { IsString, IsNotEmpty, MinLength, IsEmail, MaxLength, IsPhoneNumber } from "class-validator";
 export class CreateRegisterDTO{
 
     @IsString()
@@ -18,5 +18,5 @@ export class CreateRegisterDTO{
     @IsString()
     site:string;   
     
-    phone: string;
+    phone?: string;
 }
