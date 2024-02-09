@@ -1,5 +1,13 @@
-import { IsString, IsNotEmpty, MinLength, IsEmail, MaxLength } from "class-validator";
-export class CreateRegisterDTO{
+/* eslint-disable prettier/prettier */
+import { 
+    IsString, 
+    IsNotEmpty, 
+    MinLength, 
+    IsEmail, 
+    MaxLength,
+} from "class-validator";
+
+export class CreateRegisterDTO {
 
     @IsString()
     @IsNotEmpty()
